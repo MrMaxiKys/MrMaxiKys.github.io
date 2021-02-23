@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+/*Navigation*/
+
+.main-page-header {
+    margin: 60px auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.main-page-header #navigation-div-2 a {
+    margin: 20px auto;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 1.2s;
+}
+
+#navigation-div-2 a:hover {
+    color: #9c0022;
+    transition: 1.2s;
+}
+
+.separator {
+    color: #9c0022;
+    font-size: 25px;
+    padding: 0 3px;
+}
+
+#navigation-line {
+    margin: 35px 0px 15% 0px;
+    color: #9c0022;
+}
+
+/*Page*/
+
+.main-page-article {
+    margin: 5% 15%;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.main-page-article h3 {
+    margin: 15px 0px;
+}
+
+#section-info {
+    margin: 5% 0% 10% 0%;
+}
+
+#section-line {
+    margin: 10% auto;
+    color: #9c0022;
+}
+
+/*Photos on page*/
+
+img {
+    max-width: 95%;
+    max-height: 50vh;
+    margin: 10px auto;
+}
+
+/*Text*/
+
+/*Footer*/
+
+.main-page-footer {
+    margin-top: 200px;
+}
+
+#footer-line {
+    color: #9c0022;
+    margin: 50px 0 150px 0;
+}
+
+.main-page-footer #footer-text {
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 1%;
+}
+
+#footer-text a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-text a:hover {
+    color: #9c0022;
+    transition: 1.2s;
+}

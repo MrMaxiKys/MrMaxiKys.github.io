@@ -10,11 +10,23 @@ body {
 /*Navigation*/
 
 .main-page-header {
-    margin: 60px auto;
     text-align: center;
     font-size: 40px;
     font-family: 'Raleway', sans-serif;
     color: white;
+    /* Background photo */
+    background-image: url(/photo/title_background/IMG_1586.jpg);
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20%px;
+    border-bottom: solid #9c0022;
+}
+
+h1 {
+    padding-top: 5%;
 }
 
 .main-page-header #navigation-div-2 a {
@@ -78,13 +90,26 @@ body {
     background-color: #9c0022;
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    transition: 1.2s;
 }
 
 #myBtn:hover {
-    background-color: #555;
+    background-color: white;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
 
 /*Photos on page*/

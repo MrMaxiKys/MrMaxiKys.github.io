@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +9,19 @@ body {
     background: black;
 }
 
+div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Navigation*/
 
 .main-page-header {
     text-align: center;
-    font-size: 40px;
+    font-size: 200%;
     font-family: 'Raleway', sans-serif;
     color: white;
     /* Background photo */
@@ -21,12 +31,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 20%px;
+    padding-top: 20px;
     border-bottom: solid #9c0022;
 }
 
 h1 {
-    padding-top: 5%;
+    padding-top: 100px;
 }
 
 .main-page-header #navigation-div-2 a {
@@ -41,12 +51,6 @@ h1 {
 #navigation-div-2 a:hover {
     color: #9c0022;
     transition: 1.2s;
-}
-
-.separator {
-    color: #9c0022;
-    font-size: 25px;
-    padding: 0 3px;
 }
 
 #navigation-line {
@@ -110,6 +114,72 @@ h1 {
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
+}
+
+/* Menu buttons */
+
+#navigation-div-2 span {
+    background-color: #9c0022;
+    font-size: 23px;
+}
+
+.btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.btn-one span {
+    transition: all 0.3s;
+}
+
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: black;
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover {
+    letter-spacing: 3px;
+}
+
+.btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
+
+.separator span {
+    color: #9c0022;
+    font-size: 25px;
+    padding: 0 3px;
 }
 
 /*Photos on page*/

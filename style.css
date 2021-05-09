@@ -21,7 +21,7 @@ div[class*=box] {
 
 .main-page-header {
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     font-family: 'Raleway', sans-serif;
     color: white;
     /* Background photo */
@@ -31,17 +31,18 @@ div[class*=box] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 20px;
     border-bottom: solid #9c0022;
-}
-
-h1 {
     padding-top: 100px;
 }
 
+.main-page-header h1 {
+    padding-top: 100px;
+    margin-bottom: 15px;
+    font-size: 200%;
+}
+
 .main-page-header #navigation-div-2 a {
-    margin: 20px auto;
-    font-size: 20px;
+    font-size: 80%;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -53,11 +54,6 @@ h1 {
     transition: 1.2s;
 }
 
-#navigation-line {
-    margin: 35px 0px 15% 0px;
-    color: #9c0022;
-}
-
 /*Page*/
 
 .main-page-article {
@@ -65,7 +61,7 @@ h1 {
     text-align: center;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 120%;
 }
 
 .main-page-article h3 {
@@ -76,9 +72,50 @@ h1 {
     margin: 5% 0% 10% 0%;
 }
 
-#section-line {
-    margin: 10% auto;
+#section-line-nature,
+#section-line-people,
+#section-line-urban ,
+#section-line-animals {
+    margin: 2% auto;
     color: #9c0022;
+}
+
+/*Scroll photo*/
+
+.main-page-article #scroll-photo-nature {
+    background-image: url(/photo/title_background/section-nature.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page-article #scroll-photo-people {
+    background-image: url(/photo/title_background/section-people.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page-article #scroll-photo-urban {
+    background-image: url(/photo/title_background/section-urban.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page-article #scroll-photo-animals {
+    background-image: url(/photo/title_background/section-animals.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Floating button*/
@@ -96,7 +133,7 @@ h1 {
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 100%;
     transition: 1.2s;
 }
 
@@ -120,7 +157,7 @@ h1 {
 
 #navigation-div-2 span {
     background-color: #9c0022;
-    font-size: 23px;
+    font-size: 100%;
 }
 
 .btn-one {
@@ -151,6 +188,7 @@ h1 {
 
 .btn-one:hover {
     letter-spacing: 3px;
+    font-weight: bold;
 }
 
 .btn-one:hover::before {
@@ -167,7 +205,6 @@ h1 {
     height: 100%;
     z-index: 1;
     transition: all 0.3s;
-    background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
@@ -211,6 +248,7 @@ img {
     color: white;
     font-family: 'Raleway', sans-serif;
     margin: 1%;
+    font-size: 80%;
 }
 
 #footer-text a {

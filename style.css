@@ -25,7 +25,7 @@ div[class*=box] {
 
 .main-page-header {
     text-align: center;
-    font-size: 150%;
+    font-size: 120%;
     font-family: 'Raleway', sans-serif;
     color: white;
     /* Background photo */
@@ -36,26 +36,32 @@ div[class*=box] {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid #9c0022;
-    padding-top: 100px;
+    padding: 20px 0 0 5px;
 }
 
 .main-page-header h1 {
-    padding-top: 100px;
+    padding-top: 30px;
     margin-bottom: 15px;
     font-size: 200%;
 }
 
-.main-page-header #navigation-div-2 a {
+.main-page-header #navigation-div a {
     font-size: 80%;
     text-align: center;
     text-decoration: none;
     color: white;
     transition: 1.2s;
+    padding: 0 0 100px 0;
 }
 
-#navigation-div-2 a:hover {
-    color: #9c0022;
-    transition: 1.2s;
+.main-page-header #navigation-div {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border: 3px solid #9c0022;
+    margin: 40px 25%;
+    font-weight: bold;
+    padding-bottom: 30px;
+    max-width: 90%;
 }
 
 /*Page*/
@@ -88,7 +94,8 @@ div[class*=box] {
 
 .main-page-article #scroll-photo-nature {
     background-image: url(/photo/title_background/section-nature.jpg);
-    min-height: 200px;
+    min-height: 150px;
+    max-height: 220px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +104,8 @@ div[class*=box] {
 
 .main-page-article #scroll-photo-people {
     background-image: url(/photo/title_background/section-people.jpg);
-    min-height: 200px;
+    min-height: 150px;
+    max-height: 220px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,7 +114,8 @@ div[class*=box] {
 
 .main-page-article #scroll-photo-urban {
     background-image: url(/photo/title_background/section-urban.jpg);
-    min-height: 200px;
+    min-height: 150px;
+    max-height: 220px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,7 +124,8 @@ div[class*=box] {
 
 .main-page-article #scroll-photo-animals {
     background-image: url(/photo/title_background/section-animals.jpg);
-    min-height: 200px;
+    min-height: 150px;
+    max-height: 220px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -268,7 +278,7 @@ div[class*=box] {
     transition: all 0.3s;
     border-top-width: 4px;
     border-top-style: solid;
-    border-top-color: black;
+    border-top-color: #9c0022;
     transform: scale(0.1, 1);
 }
 

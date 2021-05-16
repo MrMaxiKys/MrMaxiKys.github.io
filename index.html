@@ -6,6 +6,8 @@
     <title>Krystian Tatara Photography</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body class="main-page-body">
     <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -30,15 +32,13 @@
             <h3 id="title-about-me">O mnie</h3>
             <p id="section-info">
                 Dzień dobry, hej, witaj!
-                <br>
-                <br>
+                <br><br>
                 Chciałbym Ciebie serdecznie powitać na mojej stronie, w której przedstawiam kilka zdjęć z różnych
                 środowisk.
                 <br>
                 Zdecydowałem się połączyć moje hobby jakim jest amatorska fotografia (głównie natury i świata nas otaczającego)
                 razem z próbą utworzenia własnego portfolio jako aspirującego kandydata na stanowisko programisty Front-End.
-                <br>
-                <br>
+                <br><br>
                 Jest to w zasadzie pierwsza próba konstrukcji takiej strony od zera przy użyciu HTML, CSS oraz JS.
                 <br>
                 Mimo, iż nie posiadam dużego doświadczenia w pracy w IT to staram się to zmienić.
@@ -47,10 +47,14 @@
                 TDD przez Scrum Mastera na IT Help Desk kończąc. Zainteresowałem się wtedy właśnie projektowaniem stron.
                 Staram się doskonalić zdobytą wiedzę i umiejętności wraz z różnymi pomocami naukowymi 
                 tj. książki, jutubowe tutoriale czy wspaniale wszystkim znany stackoverflow czy w3schools.
+                <br><br><br>
+                Pragnę również zaznaczyć, iż jestem autorem wszystkich zdjęć - zapraszam zatem serdecznie do oglądania.
+                <br>ENJOY!
             </p>
             <hr id="section-line-nature">
-            <div id="scroll-photo-nature"></div>
-            <h3 id="title-nature">Natura</h3>
+            <div id="scroll-photo-nature">
+                <h3 id="title-nature">Natura</h3>
+            </div>
             <p id="section-info">
                 Czym byłby człowiek bez otaczającej nas jakże nieokiełznanej przyrody?
                 <br>
@@ -61,20 +65,25 @@
                 starać się poszerzyć własne horyzonty fotograficzne jak i umilić oko czymś więcej niż pięknem nieskalanej natury.
             </p>
             <div class="slide">
-                <img src="/photo/nature/IMG_1454.jpg" alt="Image 1">
+                <img class="myImages" id="myImg" src="/photo/nature/IMG_1454.jpg" 
+                alt="Las w Rezerwacie Ostrężnik - Droga na Ruiny Zamku Ostrężnik">
             </div>
             <div class="slide">
-                <img src="/photo/nature/IMG_1887.jpg">
+                <img class="myImages" id="myImg" src="/photo/nature/IMG_0556.jpg"
+                alt="Przełęcz Krzyżne - Tatry">
             </div>
             <div class="slide">
-                <img src="/photo/nature/IMG_2270.jpg">
+                <img class="myImages" id="myImg" src="/photo/nature/IMG_0628.jpg"
+                alt="Dolina ... - Tatry">
             </div>
             <div class="slide">
-                <img src="/photo/nature/IMG_2275.jpg">
+                <img class="myImages" id="myImg" src="/photo/nature/IMG_2275.jpg"
+                alt="Ulica Kiedrzyńska w Częstochowie">
             </div>
             <hr id="section-line-people">
-            <div id="scroll-photo-people"></div>
-            <h3 id="title-people">Ludzie</h3>
+            <div id="scroll-photo-people">
+                <h3 id="title-people">Ludzie</h3>
+            </div>
             <p id="section-info">
                 Fotografowanie ludzi było dla mnie zawsze wielką fascynacją.
                 <br>
@@ -83,20 +92,25 @@
                 Uwielbiam oglądać te zdjęcia.
             </p>
             <div class="slide">
-                <img src="/photo/people/IMG_0542.jpg">
+                <img class="myImages" id="myImg" src="/photo/people/IMG_0542.jpg"
+                alt="Droga na Przełęcz Krzyżne">
             </div>
             <div class="slide">
-                <img src="/photo/people/IMG_1662.jpg">
+                <img class="myImages" id="myImg" src="/photo/people/IMG_1662.jpg"
+                alt="Dolina Kobylańska">
             </div>
             <div class="slide">
-                <img src="/photo/people/IMG_1891.jpg">
+                <img class="myImages" id="myImg" src="/photo/people/IMG_1891.jpg"
+                alt="Zalew Sulejowski">
             </div>
             <div class="slide">
-                <img src="/photo/people/IMG_2033.jpg">
+                <img class="myImages" id="myImg" src="/photo/people/IMG_2033.jpg"
+                alt="Zalew Sulejowski">
             </div>
             <hr id="section-line-urban">
-            <div id="scroll-photo-urban"></div>
-            <h3 id="title-urban">Miejskie klimaty</h3>
+            <div id="scroll-photo-urban">
+                <h3 id="title-urban">Miejskie klimaty</h3>
+            </div>
             <p id="section-info">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Optio ullam repellat fugit velit, ipsa cumque neque voluptatem quod 
@@ -104,20 +118,23 @@
                 deserunt hic. Nemo.
             </p>
             <div class="slide">
-                <img src="/photo/urban/IMG_2239.jpg">
+                <img class="myImages" id="myImg" src="/photo/urban/IMG_2239.jpg"
+                alt="Widok z Zamku Królewskiego na Wawelu">
             </div>
             <div class="slide">
-                <img src="/photo/urban/IMG_2239.jpg">
+                <img class="myImages" id="myImg" src="/photo/urban/IMG_2347.jpg"
+                alt="Cerkiew w Dziurdziowie">
             </div>
             <div class="slide">
-                <img src="/photo/urban/IMG_2239.jpg">
+                <img class="myImages" id="myImg" src="/photo/urban/IMG_2239.jpg">
             </div>
             <div class="slide">
-                <img src="/photo/urban/IMG_2239.jpg">
+                <img class="myImages" id="myImg" src="/photo/urban/IMG_2239.jpg">
             </div>
             <hr id="section-line-animals">
-            <div id="scroll-photo-animals"></div>
-            <h3 id="title-animals">Zwierzęta</h3>
+            <div id="scroll-photo-animals">
+                <h3 id="title-animals">Zwierzęta</h3>
+            </div>
             <p id="section-info">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Optio ullam repellat fugit velit, ipsa cumque neque voluptatem quod 
@@ -125,18 +142,26 @@
                 deserunt hic. Nemo.
             </p>
             <div class="slide">
-                <img src="/photo/animals/IMG_1937.jpg">
+                <img class="myImages" id="myImg" src="/photo/animals/IMG_1937.jpg"
+                alt="Łatek - Zalew Sulejowski">
             </div>
             <div class="slide">
-                <img src="/photo/animals/IMG_2004.jpg">
+                <img class="myImages" id="myImg" src="/photo/animals/IMG_2004.jpg"
+                alt="Argo - Zalew Sulejowski">
             </div>
             <div class="slide">
-                <img src="/photo/animals/IMG_2304.jpg">
+                <img class="myImages" id="myImg" src="/photo/animals/IMG_2304.jpg"
+                alt="Kaja - Dolina Kobylańska">
             </div>
             <div class="slide">
-                <img src="/photo/_AVATAR_1_resized.jpg">
+                <img class="myImages" id="myImg" src="/photo/_AVATAR_1_resized.jpg">
             </div>
         </section>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
     </article>
 
     <footer class="main-page-footer">

@@ -50,20 +50,28 @@ function topFunction() {
 
 // Modal function
 
-let thumbnails = document.querySelectorAll(".image-popup");
+// Create references to the modal...
+var modal = document.getElementById('myModal');
+// To all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// The image in the modal
+var modalImg = document.getElementById("img01");
+// And the caption in the modal
+var captionText = document.getElementById("caption");
 
-let popupBackground = document.querySelector("#popup-background");
-let popupTitle = document.querySelector("#popup-title");
-let popupImage = document.querySelector("#popup-image");
-
-for (let i = 0; i < thumbnails.length; i++) {
-    thumbnails.addEventListener("click", function() {
-        popupBackground.style.display = "block";
-        popupTitle.innerHTML = this.alt;
-        popupImage.src = this.src;
-    })
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // And attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
 }
 
-popupBackground.addEventListener("click", function() {
-    popupBackground.style.display = "none";
-})
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}

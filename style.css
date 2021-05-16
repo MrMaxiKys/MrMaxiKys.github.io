@@ -25,18 +25,18 @@ div[class*=box] {
 
 .main-page-header {
     text-align: center;
-    font-size: 120%;
-    font-family: 'Raleway', sans-serif;
+    font-size: 4.2vh;
+    font-family: 'Amatic SC', cursive;
     color: white;
     /* Background photo */
     background-image: url(/photo/title_background/IMG_1586.jpg);
-    min-height: 350px;
+    min-height: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid #9c0022;
-    padding: 20px 0 0 5px;
+    padding: 20px 20px 20px 20px;
 }
 
 .main-page-header h1 {
@@ -46,22 +46,22 @@ div[class*=box] {
 }
 
 .main-page-header #navigation-div a {
-    font-size: 80%;
+    font-size: 3.5vh;
     text-align: center;
     text-decoration: none;
     color: white;
     transition: 1.2s;
-    padding: 0 0 100px 0;
+    padding: 10px 10px 100px 0;
 }
 
 .main-page-header #navigation-div {
     background-color: rgba(0,0,0,0.7);
     color: white;
     border: 3px solid #9c0022;
-    margin: 40px 25%;
+    margin: 40px 12%;
     font-weight: bold;
     padding-bottom: 30px;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 /*Page*/
@@ -71,11 +71,19 @@ div[class*=box] {
     text-align: center;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 120%;
+    font-size: 2.5vh;
 }
 
 .main-page-article h3 {
-    margin: 15px 0px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 4.2vh;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(0,0,0,0.7);
+    border: 3px solid #9c0022;
+    transition: 1.2s;
+    max-width: 25%;
+    text-align: center;
 }
 
 #section-info {
@@ -94,57 +102,64 @@ div[class*=box] {
 
 .main-page-article #scroll-photo-nature {
     background-image: url(/photo/title_background/section-nature.jpg);
-    min-height: 150px;
-    max-height: 220px;
+    min-height: 15vh;
+    max-height: 30vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 8vh;
 }
 
 .main-page-article #scroll-photo-people {
     background-image: url(/photo/title_background/section-people.jpg);
-    min-height: 150px;
-    max-height: 220px;
+    min-height: 15vh;
+    max-height: 30vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 8vh;
 }
 
 .main-page-article #scroll-photo-urban {
     background-image: url(/photo/title_background/section-urban.jpg);
-    min-height: 150px;
-    max-height: 220px;
+    min-height: 15vh;
+    max-height: 30vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 8vh;
 }
 
 .main-page-article #scroll-photo-animals {
     background-image: url(/photo/title_background/section-animals.jpg);
-    min-height: 150px;
-    max-height: 220px;
+    min-height: 15vh;
+    max-height: 30vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 8vh;
 }
 
-.main-page-article img:hover {
+/* Modal */
+
+#myImg {
     cursor: pointer;
     transition: 0.3s;
+}
+  
+#myImg:hover {
     opacity: 0.7;
 }
-
-/* Modal (background)
-
+  
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 70px;
     left: 0;
     top: 0;
     width: 100%;
@@ -153,14 +168,14 @@ div[class*=box] {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
 }
-
+  
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 90vw;
 }
-
+  
 #caption {
     margin: auto;
     display: block;
@@ -171,48 +186,53 @@ div[class*=box] {
     padding: 10px 0;
     height: 150px;
 }
-
-.modal-content, #caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
+  
+.modal-content,
+#caption {
     animation-name: zoom;
-    animation-duration: 0.6;
+    animation-duration: 0.6s;
 }
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
-}
-
+  
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
 }
-
+  
 .close {
     position: absolute;
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 240%;
     font-weight: bold;
     transition: 0.3s;
 }
-
+  
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: #9c0022;
     text-decoration: none;
     cursor: pointer;
 }
-
+  
 @media only screen and (max-width: 700px) {
     .modal-content {
-        width: 100%;
+      width: 100%;
     }
 }
 
- */
+img {
+    max-width: 60vw;
+    max-height: 100vh;
+    margin: 10px auto;
+    border-radius: 10%;
+    border-style: groove;
+    border-color: #9c0022;
+}
 
 /*Floating button*/
 
@@ -309,25 +329,6 @@ div[class*=box] {
     transform: scale(0.1, 1);
 }
 
-.separator span {
-    color: #9c0022;
-    font-size: 25px;
-    padding: 0 3px;
-}
-
-/*Photos on page*/
-
-img {
-    max-width: 95%;
-    max-height: 50vh;
-    margin: 10px auto;
-    border-radius: 10%;
-    border-style: groove;
-    border-color: #9c0022;
-}
-
-/*Text*/
-
 /*Footer*/
 
 .main-page-footer {
@@ -342,9 +343,9 @@ img {
 .main-page-footer #footer-text {
     text-align: center;
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Amatic SC', cursive;
     margin: 1%;
-    font-size: 80%;
+    font-size: 120%;
 }
 
 #footer-text a {

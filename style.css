@@ -172,8 +172,8 @@ div[class*=box] {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 90vw;
+    max-width: 80vw;
+    max-height: 80vh;
 }
   
 #caption {
@@ -226,7 +226,7 @@ div[class*=box] {
 }
 
 img {
-    max-width: 60vw;
+    max-width: 50vw;
     max-height: 100vh;
     margin: 10px auto;
     border-radius: 10%;

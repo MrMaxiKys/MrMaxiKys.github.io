@@ -29,7 +29,7 @@ div[class*=box] {
     font-family: 'Amatic SC', cursive;
     color: white;
     /* Background photo */
-    background-image: url(/photo/title_background/IMG_1586.jpg);
+    background-image: url(/photo/title_background/IMG_1586_1.jpg);
     min-height: 50vh;
     background-attachment: fixed;
     background-position: center;
@@ -101,7 +101,7 @@ div[class*=box] {
 /*Scroll photo*/
 
 .main-page-article #scroll-photo-nature {
-    background-image: url(/photo/title_background/section-nature.jpg);
+    background-image: url(/photo/title_background/section-nature_1.jpg);
     min-height: 15vh;
     max-height: 30vh;
     background-attachment: fixed;
@@ -112,7 +112,7 @@ div[class*=box] {
 }
 
 .main-page-article #scroll-photo-people {
-    background-image: url(/photo/title_background/section-people.jpg);
+    background-image: url(/photo/title_background/section-people_1.jpg);
     min-height: 15vh;
     max-height: 30vh;
     background-attachment: fixed;
@@ -123,7 +123,7 @@ div[class*=box] {
 }
 
 .main-page-article #scroll-photo-urban {
-    background-image: url(/photo/title_background/section-urban.jpg);
+    background-image: url(/photo/title_background/section-urban_1.jpg);
     min-height: 15vh;
     max-height: 30vh;
     background-attachment: fixed;
@@ -134,7 +134,7 @@ div[class*=box] {
 }
 
 .main-page-article #scroll-photo-animals {
-    background-image: url(/photo/title_background/section-animals.jpg);
+    background-image: url(/photo/title_background/section-animals_1.jpg);
     min-height: 15vh;
     max-height: 30vh;
     background-attachment: fixed;
